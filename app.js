@@ -15,6 +15,7 @@ const name = document.querySelector(".car-name")
 const image = document.querySelector(".car-img")
 const price = document.querySelector(".car-price")
 
+
 const sections = document.querySelectorAll("section")
 
 const fordArr = [
@@ -195,6 +196,7 @@ for (let i = 0; i < mainArr.length; i++) {
   createCar(mainArr, i)
 }
 
+
 //* create car element
 
 function createCar(arr, index) {
@@ -202,6 +204,7 @@ function createCar(arr, index) {
 
   const car = document.createElement("div")
   car.classList.add("car")
+  car.classList.add("show-scroll")
 
   const carInfo = document.createElement("div")
   carInfo.classList.add("car-info")
@@ -234,6 +237,7 @@ function createCar(arr, index) {
 
   carContainer.appendChild(car)
 }
+
 
 //* car catalog
 
